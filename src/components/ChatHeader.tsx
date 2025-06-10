@@ -17,7 +17,7 @@ export const ChatHeader = ({ isConnected, onConnect }: ChatHeaderProps) => {
           </div>
           <div>
             <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-              ChainChat
+              Messaging Buildathon
             </h1>
             <p className="text-xs text-muted-foreground">Onchain Messaging</p>
           </div>

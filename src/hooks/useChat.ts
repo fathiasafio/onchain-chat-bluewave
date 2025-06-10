@@ -1,4 +1,3 @@
-
 import { useState, useCallback } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -16,7 +15,7 @@ export const useChat = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      content: "Welcome to ChainChat! This is a demo message showing how onchain messaging works.",
+      content: "Welcome to Messaging Buildathon! This is a demo message showing how onchain messaging works.",
       sender: "0x1234...5678",
       timestamp: new Date(Date.now() - 5 * 60 * 1000),
       isOwn: false,
@@ -24,7 +23,7 @@ export const useChat = () => {
     },
     {
       id: "2", 
-      content: "Hey everyone! Excited to try out this onchain messaging platform 🚀",
+      content: "Hey everyone! Excited to try out this buildathon messaging platform 🚀",
       sender: "0x9876...4321",
       timestamp: new Date(Date.now() - 3 * 60 * 1000),
       isOwn: false,
@@ -79,11 +78,11 @@ export const useChat = () => {
     // Simulate receiving a response after a delay
     setTimeout(() => {
       const responses = [
-        "That's awesome! Love this onchain messaging concept 💎",
-        "GM! Great to see more people joining the chain 🌅", 
+        "That's awesome! Love this buildathon messaging concept 💎",
+        "GM! Great to see more builders joining the chain 🌅", 
         "Welcome to the future of decentralized communication! 🎉",
-        "This is so cool, messages stored forever on the blockchain! 🔗",
-        "Nice! No more centralized servers controlling our conversations 🔐"
+        "This buildathon project is so cool, messages stored forever on the blockchain! 🔗",
+        "Nice work! No more centralized servers controlling our conversations 🔐"
       ];
       
       const responseMessage: Message = {

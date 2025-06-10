@@ -33,7 +33,7 @@ export const ChatContainer = ({ messages }: ChatContainerProps) => {
           <div className="w-16 h-16 bg-blue-gradient rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-blue">
             <span className="text-2xl">💬</span>
           </div>
-          <h3 className="text-lg font-semibold mb-2">Welcome to ChainChat</h3>
+          <h3 className="text-lg font-semibold mb-2">Welcome to Messaging Buildathon</h3>
           <p className="text-muted-foreground max-w-md">
             Connect your wallet and start chatting with the community. 
             All messages are stored onchain for transparency and permanence.
