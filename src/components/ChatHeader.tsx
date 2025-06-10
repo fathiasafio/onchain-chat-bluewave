@@ -1,13 +1,16 @@
 
-import { Wallet, Users, Settings } from "lucide-react";
+import { Wallet, Users, Settings, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useAuth } from "@/hooks/useAuth";
 
 interface ChatHeaderProps {
   isConnected: boolean;
   onConnect: () => void;
 }
 
-export const ChatHeader = ({ isConnected, onConnect }: ChatHeaderProps) => {
+export const ChatHeader = ({ isConnected }: ChatHeaderProps) => {
+  const { signOut } = useAuth();
+
   return (
     <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
       <div className="flex items-center justify-between p-4">
@@ -26,23 +29,27 @@ export const ChatHeader = ({ isConnected, onConnect }: ChatHeaderProps) => {
         <div className="flex items-center space-x-2">
           <div className="hidden sm:flex items-center space-x-2 text-sm text-muted-foreground">
             <Users className="w-4 h-4" />
-            <span>12 online</span>
+            <span>Connected</span>
           </div>
           
           <Button
-            onClick={onConnect}
-            variant={isConnected ? "secondary" : "default"}
+            variant="secondary"
             size="sm"
-            className={`flex items-center space-x-2 ${
-              isConnected 
-                ? "bg-green-500/20 text-green-400 hover:bg-green-500/30" 
-                : "bg-blue-gradient hover:opacity-90"
-            }`}
+            className="bg-green-500/20 text-green-400 hover:bg-green-500/30 flex items-center space-x-2"
+            disabled
           >
             <Wallet className="w-4 h-4" />
-            <span className="hidden sm:inline">
-              {isConnected ? "Connected" : "Connect Wallet"}
-            </span>
+            <span className="hidden sm:inline">Authenticated</span>
+          </Button>
+
+          <Button 
+            variant="ghost" 
+            size="sm"
+            onClick={signOut}
+            className="flex items-center space-x-2"
+          >
+            <LogOut className="w-4 h-4" />
+            <span className="hidden sm:inline">Sign Out</span>
           </Button>
 
           <Button variant="ghost" size="sm">
