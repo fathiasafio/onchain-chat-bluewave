@@ -1,73 +1,37 @@
-# Welcome to your Lovable project
+# 🌊 Onchain Chat – BlueWave
 
-## Project info
+**BlueWave** is a decentralized, censorship-resistant onchain chat protocol built for the new internet. Powered by smart contracts and public blockchains, BlueWave enables secure, transparent, and permissionless communication between users — directly on the blockchain.
+---
+## 🚀 Features
 
-**URL**: https://lovable.dev/projects/3b4b668c-5fa4-474f-a308-1a72abf0a8ec
+- 💬 **Onchain Messaging** — All messages are stored and verified on-chain.
+- 🔐 **Wallet-based Identity** — No sign-ups. Connect your wallet and start chatting.
+- 🌐 **Permissionless & Open** — No centralized servers or moderation.
+- ⛓️ **Built for L2 / Mainnet** — Optimized for low gas cost (Base, Optimism, or Polygon).
+- 📜 **Chat History as Immutable Ledger** — Every conversation is forever onchain.
+- 🧱 **Composable** — Integrates with NFTs, DAOs, or other dApps easily.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧰 Tech Stack
 
-**Use Lovable**
+- **Frontend:** React + Tailwind CSS
+- **Smart Contracts:** Solidity (ERC-721, custom chat contracts)
+- **Blockchain:** Ethereum / L2 (Optimism, Base, Polygon, or BuildBear sandbox)
+- **Wallet:** MetaMask / WalletConnect
+- **Backend (optional):** The Graph / IPFS / Push Protocol (optional off-chain indexing)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3b4b668c-5fa4-474f-a308-1a72abf0a8ec) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📦 Installation
 
-**Use your preferred IDE**
+```bash
+# Clone the repo
+git clone https://github.com/your-username/onchain-chat-bluewave.git
+cd onchain-chat-bluewave
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# Install dependencies
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the dev server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3b4b668c-5fa4-474f-a308-1a72abf0a8ec) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
